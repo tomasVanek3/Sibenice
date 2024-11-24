@@ -1,0 +1,34 @@
+#strana1{
+    text-align: center;
+    justify-content: center;
+    border: 4px solid black;
+    margin: 60px;
+    padding: 20px;
+    align-items: center;
+}
+
+#nadpis{
+    color: red;
+}
+
+#buttons{
+    padding-top: 10px;
+}
+
+
+#tlacitko2, #tlacitko1{
+    padding-top: 10px;
+}
+
+.MENU{
+    display: block;
+}
+
+.HRA{
+    display: none;
+}
+
+#zpět{
+    margin-left: 1450px;
+    align-items: right;
+}

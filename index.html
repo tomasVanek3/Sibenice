@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="app.js"></script>
+    <title>Šibenice Hra</title>
+</head>
+<body>
+    <div id="strany">
+        <div id="strana1" class="MENU">
+            <h1 id="nadpis">Šibenice</h1>
+            <div id="buttons">
+                <form  id="tlacitko1">
+                    <button id="ZmenTlac1" type="button" onclick="FunkceHrat()">HRÁT</button>
+                </form>
+                <form  id="tlacitko2" >
+                    <button id="ZmenTlac2" type="button" onclick="FunkceNastavení()">NASTAVENI</button>
+                </form>
+            </div>
+        </div>
+        <div id="strana2" class="HRA">
+            <div id="zpět">
+                <form>
+                    <button  type="button" onclick="ZpetButton()">ZPĚT</button>
+                </form>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
