@@ -24,12 +24,77 @@ function FunkceHrat(){
     //prohazuje className
     document.getElementById("strana1").className = "HRA";
     document.getElementById("strana2").className = "MENU";
+}
+let slova = ["AUTO", "POLE", "KOSTEL", "PRAHA", "LOKOMOTIVA", "GARGAMEL", "LUKA", "PRSTEN", "KORUNA", "LES"];
+let slovo = getRandomSlovo(slova);
+let pocet_pismen = slovo.length;
+let spatne = 0;
 
-    let slova = ["AUTO", "POLE", "KOSTEL", "PRAHA", "LOKOMOTIVA", "GARGAMEL", "LUKA", "PRSTEN", "KORUNA", "LES"];
+Boolean = false;
 
-    const slovo = getRandomSlovo(slova);
+function TlacA(){
+    console.log(slovo);
+    
+    for(let i = 0; i < slovo.length; i++){
+        if (slovo[i] == "A"){
+            Boolean = true;
+            break;
+        }
+        else{
+            continue;
+        } 
+    }
+    
+    const A_pis = document.getElementById('A');
+    if (Boolean == true){
+        console.log("A tam je");
+        A_pis.remove();
+        console.log(pocet_pismen - 1);
+    }
+    else{
+        A_pis.remove();
+        console.log("A tam není");
+        if (spatne == 5){
+            console.log("konec");
+        }
+        else{
+            spatne++;
+            console.log(spatne);
+        }
+        
+    }
     
 }
 
+function TlacB(){
+    console.log(slovo);
+    for(let i = 0; i < slovo.length; i++){
+        if (slovo[i] == "B"){
+            Boolean = true;
+            break;
+        }
+        else{
+            continue;
+        }
+    }
 
+    const B_pis = document.getElementById('B');
+    if (Boolean == true){
+        console.log("B tam je");
+        B_pis.remove();
+        console.log(pocet_pismen - 1);
+    }
+    else{
+        console.log("B tam není");
+        B_pis.remove();
+        if (spatne == 5){
+            console.log("konec");
+        }
+        else{
+            spatne++;
+            console.log(spatne);
+        }
+        
+    }
+}
 
