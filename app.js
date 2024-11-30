@@ -11,6 +11,7 @@ if ('serviceWorker' in navigator) {
 }
 
 function ZpetButton(){
+    
     document.getElementById("strana1").className = "MENU";
     document.getElementById("strana2").className = "HRA";
 }
@@ -21,7 +22,7 @@ function getRandomSlovo(slova){
 }
 
 function FunkceHrat(){
-    //prohazuje className
+    document.getElementById("ZmenTlac1").setAttribute('href', 'file:///D:/%C5%A1kola/MOA/Sibenice/index2.html')
     document.getElementById("strana1").className = "HRA";
     document.getElementById("strana2").className = "MENU";
 }

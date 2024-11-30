@@ -38,3 +38,10 @@
     align-content: center;
     margin-left: 600px;
 }
+
+#A, #B, #C, #D, #E, #F, #G, #H, #I, #J, #K, #L, #M, #N, #O, #P, #Q, #R, #S, #T, #U, #V, #W, #X, #Y, #Z{
+    height: 25px;
+    width: 25px;
+    border-radius: 7px;
+    border: 10px black
+}
