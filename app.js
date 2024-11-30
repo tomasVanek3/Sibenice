@@ -22,7 +22,7 @@ function getRandomSlovo(slova){
 }
 
 function FunkceHrat(){
-    window.location.href = 'https://www.youtube.com/watch?v=TRI--nfcWws&t=133s';
+    window.location.href = 'https://sibenicegame.netlify.app/';
 }
 let slova = ["AUTO", "POLE", "KOSTEL", "PRAHA", "LOKOMOTIVA", "GARGAMEL", "LUKA", "PRSTEN", "KORUNA", "LES"];
 let slovo = getRandomSlovo(slova);
