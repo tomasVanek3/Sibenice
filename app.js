@@ -10,11 +10,7 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-function ZpetButton(){
-    
-    document.getElementById("strana1").className = "MENU";
-    document.getElementById("strana2").className = "HRA";
-}
+
 
 function getRandomSlovo(slova){
     const num = Math.floor(Math.random() * (slova.length));
