@@ -30,12 +30,14 @@ let slovo = getRandomSlovo(slova);
 let pocet_pismen = slovo.length;
 let spatne = 0;
 
-Boolean = false;
+
 
 function TlacA(){
     console.log(slovo);
-    
+    Boolean = false;
+    //projdeme náhodně vygenerované slovo
     for(let i = 0; i < slovo.length; i++){
+        //pokud se v tom slově na nějaké pozici nachází A 
         if (slovo[i] == "A"){
             Boolean = true;
             break;
@@ -49,7 +51,6 @@ function TlacA(){
     if (Boolean == true){
         console.log("A tam je");
         A_pis.remove();
-        console.log(pocet_pismen - 1);
     }
     else{
         A_pis.remove();
@@ -68,6 +69,7 @@ function TlacA(){
 
 function TlacB(){
     console.log(slovo);
+    Boolean = false;
     for(let i = 0; i < slovo.length; i++){
         if (slovo[i] == "B"){
             Boolean = true;
@@ -82,7 +84,6 @@ function TlacB(){
     if (Boolean == true){
         console.log("B tam je");
         B_pis.remove();
-        console.log(pocet_pismen - 1);
     }
     else{
         console.log("B tam není");
@@ -92,6 +93,7 @@ function TlacB(){
         }
         else{
             spatne++;
+            
             console.log(spatne);
         }
         
