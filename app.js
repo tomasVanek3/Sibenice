@@ -22,7 +22,7 @@ function getRandomSlovo(slova){
 }
 
 function FunkceHrat(){
-    document.getElementById("ZmenTlac1").setAttribute('href', 'file:///D:/%C5%A1kola/MOA/Sibenice/index2.html')
+    window.location.href = 'https://www.youtube.com/watch?v=TRI--nfcWws&t=133s';
 }
 let slova = ["AUTO", "POLE", "KOSTEL", "PRAHA", "LOKOMOTIVA", "GARGAMEL", "LUKA", "PRSTEN", "KORUNA", "LES"];
 let slovo = getRandomSlovo(slova);
